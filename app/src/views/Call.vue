@@ -51,9 +51,9 @@ export default {
       if (row === 1) {
         return user - 1
       } else if (row === 2) {
-        return user + this.columns[row - 1] - 1
+        return user + this.columns[row - 2] - 1
       } else {
-        return user + this.columns[row - 1] + this.columns[row - 2] - 1
+        return user + this.columns[row - 2] + this.columns[row - 3] - 1
       }
     },
     click () {
