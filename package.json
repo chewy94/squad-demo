@@ -1,0 +1,9 @@
+{
+  "name": "squad-demo-project",
+  "version": "1.0.0",
+  "description": "Squad Interview Demo Project",
+  "main": "index.js",
+  "author": "Sean Kimball <smkimbal@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
