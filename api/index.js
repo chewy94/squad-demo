@@ -8,6 +8,6 @@ app.use(cors())
 
 app.get('/user', (req, res) => res.send('Chloe Ku'))
 
-app.listen(port, () => console.log(`App is running on port ${port}`))
+app.listen(process.env.PORT || port, () => console.log(`App is running on port ${port}`))
 
 module.exports.handler = serverless(app)
