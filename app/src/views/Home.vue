@@ -21,8 +21,8 @@ export default {
   }),
   async mounted () {
     console.log(this.$route.params.invite)
-    console.log(await axios.get('http://localhost:3000/user'))
-    this.caller = (await axios.get('http://localhost:3000/user')).data
+    console.log(await axios.get(process.env.VUE_APP_API_ENDPOINT))
+    this.caller = (await axios.get(process.env.VUE_APP_API_ENDPOINT)).data
   }
 }
 </script>
