@@ -2,10 +2,15 @@
   "name": "squad-demo-project-api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "netlify-lambda build ./"
+  },
   "author": "Sean Kimball",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "serverless-http": "^2.3.0"
   }
 }
