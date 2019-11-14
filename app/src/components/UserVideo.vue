@@ -20,7 +20,7 @@ export default {
     'user-video-muted': UserVideoMuted
   },
   mounted () {
-    if (!this.$refs.video.playing) this.$refs.video.play()
+    if (!this.muted && !this.$refs.video.playing) this.$refs.video.play()
   }
 }
 </script>
