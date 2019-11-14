@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    redirect: '/invite/SC917we54',
     name: 'home',
     component: Home
   },
