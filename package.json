@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Squad Interview Demo Project",
   "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd api && yarn start\" \"cd app && yarn serve\""
+  },
   "author": "Sean Kimball <smkimbal@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "concurrently": "^5.0.0"
+  }
 }
