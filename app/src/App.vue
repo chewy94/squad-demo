@@ -25,8 +25,26 @@
   </v-app>
 </template>
 
+<script>
+export default {
+  mounted () {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
+  }
+}
+</script>
+
 <style lang="scss">
 .v-footer {
   flex-shrink: 0 !important;
+}
+.v-application--wrap {
+  min-height: 0 !important;
+  height: calc(var(--vh, 1vh) * 100);
 }
 </style>
